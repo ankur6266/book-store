@@ -1,7 +1,9 @@
 header {
     letter-spacing: 2px;
   }
-  
+#header-logo{
+  visibility: hidden;
+}
   header .nav-item a:hover {
     color: #ffff74;
   }

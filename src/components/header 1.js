@@ -6,7 +6,7 @@ function Header1(){
         <header>
             <nav className="navbar navbar-expand-lg">
             <div className="container-fluid">
-                <Link to="/" className="navbar-brand" href="#">Navbar</Link>
+                <Link to="/" className="navbar-brand" id="header-logo" href="#">BOOKISH</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon">=</span></button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">

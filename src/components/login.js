@@ -25,10 +25,12 @@ function Login(){
                 </p>
 
                 <button className='login__registerButton'>
-                    <Link to="/signup" className="signup_button">Create New Account. Sign Up</Link>
+                   <Link to="/signup" className="signup_button">Create New Account. Sign Up</Link>
                 </button>
             </div>
+            <div className="extra"></div>
         </div>
+        
     )
 }
 export default Login;

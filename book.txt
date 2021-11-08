@@ -1,0 +1,15 @@
+{
+id: WD123
+name: "JavaScript & jQuery: The Missing Manual"
+category: "Web Developmenr"
+rating: 4
+price: 550
+}
+
+{
+id: ML321
+name: "Machine Learning with Python Cookbook: Practical Solutions from Preprocessing to Deep Learning"
+category: "Web Developmenr"
+rating: 3
+price: 450
+}
