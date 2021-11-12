@@ -17,10 +17,10 @@ function Header1(){
                     CATEGORY
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a className="dropdown-item" href="#">Action</a></li>
-                    <li><a className="dropdown-item" href="#">Another action</a></li>
+                    <li><a className="dropdown-item" href="#">Web Dev</a></li>
+                    <li><a className="dropdown-item" href="#">Data Science</a></li>
                     <li><hr className="dropdown-divider" /></li>
-                    <li><a className="dropdown-item" href="#">Something else here</a></li>
+                    <li><a className="dropdown-item" href="#">Robotics</a></li>
                 </ul>
                 </li>
                 </ul>
@@ -31,7 +31,7 @@ function Header1(){
                 <li className="nav-item ">
                 <Link to="/login" className="nav-link">LOG IN</Link></li>
                 <li className="nav-item ">
-                <a className="nav-link fw-normal" href="#">ABOUT US</a></li>
+                <Link to="/contact" className="nav-link fw-normal" href="#">CONTACT US</Link></li>
                 </ul>
 
                 </div>
