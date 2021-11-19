@@ -32,6 +32,8 @@ function Header1(){
                 <Link to="/login" className="nav-link">LOG IN</Link></li>
                 <li className="nav-item ">
                 <Link to="/contact" className="nav-link fw-normal" href="#">CONTACT US</Link></li>
+                <li className="nav-item ">
+                <Link to="/about" className="nav-link fw-normal" href="#">ABOUT US</Link></li>
                 </ul>
 
                 </div>

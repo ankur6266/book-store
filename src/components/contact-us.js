@@ -1,9 +1,9 @@
 import {Link} from "react-router-dom"
-import "./contact-us.css"
+import './contact-us.css'
 function Contact(){
     return(
-        <div class="container">
-            <Link id="contact_head" to='/'>
+        <div class="Contact">
+            <Link className="contact_head" to='/'>
                 <h2>BOOKISH</h2>
             </Link>
             <div class="contact-section">
@@ -40,11 +40,11 @@ function Contact(){
                     <div class="col-md-4 contact-info">
                         <div class="phone">
                             <h5>Call</h5>
-                            <a href="tel:6268781876">6268781876</a>
+                            <a href="tel:6268781876">9988553461</a>
                         </div>
                         <div class="email">
                             <h5>Email</h5>
-                            <a href="mailto:ankursaxenaankur0@gmail.com">ankursaxenaankur0@gmail.com</a>
+                            <a href="mailto:bookish@gmail.com">bookish@gmail.com</a>
                         </div>
                         <div class="location">
                             <h5>Visit</h5>
@@ -52,7 +52,7 @@ function Contact(){
                                 1356/5 Nanda Nagar
                                 <br /> Indore, FL 451010 <br />
                                 <br />
-                                <a class="btn btn-accent" href="" target="_blank"><img src="https://www.solodev.com/assets/contact-us-page/map-marker.png" alt="Map Marker" />Google Maps</a>
+                                <a class="btn btn-accent" href="#" target="_blank"><img src="" alt="Map" />Google Maps</a>
                             </p>
                         </div>
                     </div>

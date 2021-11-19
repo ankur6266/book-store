@@ -14,6 +14,10 @@ function BookCard(props){
                             <p>⭐</p>
                             ))}
                 </div>
+            
+                <button className="btn">Buy Now/ Rent</button>
+                <button className="btn">Add To Cart</button>
+            
             </div>
         </div>
     )

@@ -18,6 +18,10 @@ h6{
 .rating p{
     display: inline;
 }
+.bookCard .btn{
+    background-color: rgb(49, 255, 169);
+    margin: 1.5px;
+}
 @media only screen and (max-width: 576px) {
     .bookCard{
         /* font-size: 10px; */

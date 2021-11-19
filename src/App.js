@@ -9,6 +9,7 @@ import Login from "./components/login";
 import SignUp from "./components/signup";
 import Contact from "./components/contact-us";
 import BookSection from "./components/book-section";
+import About from "./components/about-us";
 
 function App(){
     // console.log(window.innerHeight);
@@ -28,6 +29,10 @@ function App(){
                     </Route>
                     <Route exact path="/contact">
                         <Contact />
+                    </Route>
+                    <Route exact path="/about">
+                        <Header1 />
+                        <About />
                     </Route>
         </div>
     )
