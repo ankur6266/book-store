@@ -1,8 +1,11 @@
 import React, {useContext} from "react";
 import { Link, NavLink } from "react-router-dom";
-
+ 
 // cart
 import { CartContext } from "./cart/CartContext";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+
 
 const Navbar = () => {
   const [carts, setCarts] = useContext(CartContext);
@@ -51,7 +54,7 @@ const Navbar = () => {
             
             <li className="nav-item">
               <NavLink className="nav-link position-relative" exact to="/cart"> 
-              <i className="fa fa-shopping-cart"></i>
+              <FontAwesomeIcon icon={faShoppingCart} />
                 <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                 {carts.length}
                   <span className="visually-hidden">cart items</span>
