@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlusCircle, faMinusCircle } from '@fortawesome/free-solid-svg-icons'
 
 function Order(props) {
   if (props.isEmpty == 0) {
@@ -114,12 +116,16 @@ const Cart = () => {
                   <b>Price: ${cart.price} |</b>
                   <b>
                     Quantity: 
-                    <button onClick={() => removeItem(cart, "add")} className="btn"><i class="fas fa-plus-circle" ></i></button>
+                    <button onClick={() => removeItem(cart, "add")} className="btn">
+                    <FontAwesomeIcon icon={faPlusCircle} />
+                    </button>
                       {cart.quantity} 
-                    <button onClick={() => removeItem(cart, "remove")} className="btn"><i class="fas fa-minus-circle" ></i> </button>
+                    <button onClick={() => removeItem(cart, "remove")} className="btn">
+                    <FontAwesomeIcon icon={faMinusCircle} />
+                    </button>
                   </b>
                 </p>
-
+               
                 <button
                   className="btn btn-danger btn-sm"
                   onClick={() => removeCart(cart.id)}
