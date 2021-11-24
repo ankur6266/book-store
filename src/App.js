@@ -1,41 +1,47 @@
-import React from "react"
-// import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
-// import 'bootstrap/dist/js/bootstrap.min.js'
-import Header1 from "./components/header 1";
-import Header2 from "./components/header 2";
-import Home from "./components/home.js";
-import {BrowserRouter as Router,Route,Switch} from "react-router-dom"
-import Login from "./components/login";
-import SignUp from "./components/signup";
-import Contact from "./components/contact-us";
-import BookSection from "./components/book-section";
-import About from "./components/about-us";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  withRouter,
+} from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./components/pages/Home";
+import About from "./components/pages/About";
+import Services from "./components/pages/Services";
+import Login from "./components/pages/Login";
+import NotFound from "./components/pages/NotFound";
+import Library from "./components/libraries/Library";
+import View from "./components/libraries/View";
 
-function App(){
-    // console.log(window.innerHeight);
-    return(
-        <div>
-            
-                    <Route exact path="/">
-                        <Header1 />
-                        <Home/>
-                        <BookSection />
-                    </Route>
-                    <Route exact path="/login">
-                        <Login/>
-                    </Route>
-                    <Route exact path="/signup">
-                        <SignUp/>
-                    </Route>
-                    <Route exact path="/contact">
-                        <Contact />
-                    </Route>
-                    <Route exact path="/about">
-                        <Header1 />
-                        <About />
-                    </Route>
-        </div>
-    )
+import "./App.css";
+import Footer from "./components/pages/Footer";
+// cart
+import Cart from "./components/cart/Cart";
+import {CartProvider} from './components/cart/CartContext';
+
+
+function App() {
+  return (
+    <Router>
+      <CartProvider>
+        <Navbar />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/services" component={Services} />
+
+          <Route exact path="/login" component={Login} />
+
+          <Route exact path="/library" component={Library} />
+          <Route exact path="/view/:id" component={View} />
+          <Route exact path="/cart" component={Cart} />
+          <Route component={NotFound} />
+        </Switch>
+
+        <Footer />
+      </CartProvider> 
+    </Router>
+  );
 }
 
 export default App;
