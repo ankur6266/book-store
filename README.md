@@ -7,7 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### 1. Clone project 
 ```bash
-https://github.com/amitgirwal/ebook.git
+git clone https://github.com/ankur6266/book-store.git
 ```
 
 ### 2. For installation of project locally
