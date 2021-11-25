@@ -1,0 +1,120 @@
+.Contact{
+  background-image: url('../images/home-background.jpg');
+  padding: 0 15%;
+}
+.contact_head{
+  width: 30%;
+    margin-bottom: 2%;
+    padding: 3px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.829);
+}
+.contact-section .form-control{
+  border: 1px solid  #2fbfbc;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-shadow: none;
+  
+}
+.contact-section{
+  background-color: rgb(233, 233, 233);
+  padding: 2%;
+}
+.left-form{
+  width: 500px;
+}
+.contact-fields {
+  padding:40px 0px 0px;
+}
+.phone {
+  padding-top: 50px;
+}
+.phone,
+.email,
+.working-hours {
+  margin-bottom:30px;
+}
+.phone h2,
+.email h2,
+.working-hours h2 {
+  margin-top:0px;
+}
+.phone a,
+.email a,
+.location a {
+  color: #777777;
+  font-size:18px;
+}
+
+.contact-fields .form-group {
+  margin-bottom: 35px;
+}
+.contact-info {
+  margin-top: -40px;
+}
+.contact-fields .form-group input,
+.contact-fields .form-group textarea {
+  font-size: 14px;
+}
+.location a.btn.btn-accent {
+  padding: 12px 26px 10px;
+  margin-top: 30px;
+  font-size: 14px;
+}
+.btn-accent{
+  margin-bottom: 20px;
+}
+.location a.btn.btn-accent img {
+  margin-right: 20px;
+}
+.location hr {
+  margin-bottom: 10px;
+}
+.btn {
+    font-size: 12px;
+    padding: 22px 46px 18px;
+    line-height: 1;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0;
+    position: relative;
+    letter-spacing: 0.3px;
+}
+.btn.btn-accent {
+    background: #2fbfbc;
+    color: white;
+}
+.btn.btn-accent:hover {
+    background: #269694;
+}
+
+.contact-info .h5 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    color: #101f1d;
+    font-size: 30px;
+    letter-spacing: 1.25px;
+}
+
+.btn.btn-dark {
+    background: #111f1d;
+    color: white;
+}
+.btn {
+    font-size: 15px;
+    padding: 22px 46px 18px;
+    line-height: 1;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0;
+    position: relative;
+    letter-spacing: 0.3px;
+}
+@media screen and (min-width: 980px) {
+  .contact-info {
+    padding-left: 110px;
+  }
+}

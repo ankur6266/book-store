@@ -3,13 +3,14 @@ import React from "react"
 // import 'bootstrap/dist/js/bootstrap.min.js'
 import Header1 from "./components/header 1";
 import Header2 from "./components/header 2";
-import Home from "./components/home.js";
+import Home from "./components/Pages/home.js";
 import {BrowserRouter as Router,Route,Switch} from "react-router-dom"
-import Login from "./components/login";
-import SignUp from "./components/signup";
-import Contact from "./components/contact-us";
+import Login from "./components/Pages/login";
+import SignUp from "./components/Pages/signup";
+import Contact from "./components/Pages/contact-us";
 import BookSection from "./components/book-section";
-import About from "./components/about-us";
+import About from "./components/Pages/about-us";
+
 
 function App(){
     // console.log(window.innerHeight);
