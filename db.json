@@ -1,0 +1,67 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "fname": "Smith",
+      "lname": "Summers",
+      "email": "smithsummers@g.com",
+      "password": "Smithsummers@1212",
+      "created_date": "12/10/2021",
+      "updated_date": "12/10/2021"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Believe in Yourself ",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+      "price": "1.99",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/41o5PJi5v3L._SX327_BO1,204,203,200_.jpg",
+      "created_date": "12/10/2021",
+      "updated_date": "12/10/2021"
+    },
+    {
+      "id": 2,
+      "name": "You Can",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+      "price": "1.39",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/41YLfmTXeCL._SX319_BO1,204,203,200_.jpg",
+      "created_date": "12/10/2021",
+      "updated_date": "12/10/2021"
+    }
+  ],
+  "carts": [
+    {
+      "pid": 2,
+      "name": "Web Desinging and Publishing",
+      "price": 180,
+      "quantity": 4,
+      "image": "/static/media/WAP01.422434a4.jpg",
+      "id": 2
+    },
+    {
+      "pid": 3,
+      "name": "Learning Web Design: A Beginners Guide to HTML, Css, Javasrcipt and Web graphics",
+      "price": 663,
+      "quantity": 2,
+      "image": "/static/media/LWD02.01b8d107.jpeg",
+      "id": 3
+    },
+    {
+      "pid": 4,
+      "name": "Mastering HTML,Css,& Javascript Web Publishing",
+      "price": 190,
+      "quantity": 2,
+      "image": "/static/media/MHCJ3.9d3740ec.jpeg",
+      "id": 4
+    },
+    {
+      "pid": "JFMW5",
+      "name": "Javascript for Modern Web Development: Building A Web Application Using HTML ,Css and Javascript",
+      "price": 376,
+      "quantity": 1,
+      "image": "/static/media/JFMW5.7c9dd777.jpeg",
+      "id": 5
+    }
+  ]
+}

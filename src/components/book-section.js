@@ -1,27 +1,20 @@
-import BookCard from "./book-card"
-import BookList from "./bookList"
-import './book-section.css'
+import BookCard from "./book-card";
+import "./book-section.css";
 
-function BookSection(){
-    return(
-        <div className="container-fluid bookSection">
-            <div className="row">
-                {BookList.map((book) => 
-            {
-                return(
-                    <BookCard 
-                    name = {book.name}
-                    price= {book.price}
-                    image= {book.image}
-                    rating= {book.rating}
-                    />
-                )
-            }        
-            )
-            }
-            </div>
-        </div>
-    )
+const BookSection = ({ products, onAddToCart }) => {
+
+    // if (!products.length) return <p>Loading...</p>;
+  return (
+    <div className="container-fluid bookSection">
+      <div className="row">
+        {products.map((book) => {
+          return (
+            <BookCard book={book}  onAddToCart={onAddToCart} />
+          );
+        })}
+      </div>
+    </div>
+  );
 }
 
 export default BookSection;

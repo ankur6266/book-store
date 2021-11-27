@@ -1,14 +1,17 @@
 import './book-card.css'
-import BookList from './bookList';
-function BookCard(props){
+
+
+const BookCard = ({ book, onAddToCart }) => {
+    const handleAddToCart = () => onAddToCart(book, 1);
+
     return(
         <div className="col-lg-3 col-md-3 col-sm-6 col-xs-6 bookCard">
             <div class="in-card">
-            <h6>{props.name}</h6>
-            <img className="cardImage" src = {props.image} alt="book"/>
-            <h6>Price: ₹ {props.price}</h6>
+            <h6>{book.name}</h6>
+            <img className="cardImage" src = {book.image} alt="book"/>
+            <h6>Price: ₹ {book.price}</h6>
                 <div className="rating">
-                    {Array(Math.floor(props.rating))
+                    {Array(Math.floor(book.rating))
                         .fill()
                         .map((_, i) => (
                             <p>⭐</p>
@@ -16,7 +19,14 @@ function BookCard(props){
                 </div>
             
                 <button className="btn">Buy Now/ Rent</button>
-                <button className="btn">Add To Cart</button>
+                {/* <button className="btn" onClick={handleAddToCart} disabled="true">
+                    Add To Cart <div class="spinner-border spinner-border-sm" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </button> */}
+                <button className="btn" onClick={handleAddToCart} >
+                    Add To Cart  
+                </button>
             
             </div>
         </div>
