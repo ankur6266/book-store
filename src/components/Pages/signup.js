@@ -4,9 +4,7 @@ import '../Pages/signup.css'
 function SignUp(){
     return(
         <div className='signup'>
-            <Link className="signup_head" to='/'>
-                <h2>BOOKISH</h2>
-            </Link>
+            
 
             <div className='signup__container'>
                 <h1>Sign Up</h1>
@@ -22,7 +20,9 @@ function SignUp(){
                     <input type="password" placeholder="Password" required />
                     <h5>Confirm Password</h5>
                     <input type="password" placeholder="Password" required />
-                    <button type='submit' className='signup__signInButton'>Sign Up</button>
+                    <button type='submit' className='signup__signInButton' onClick="#">
+                    Sign Up
+                    </button>
                 </form>
 
                 <p>

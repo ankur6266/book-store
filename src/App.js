@@ -1,21 +1,19 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-// import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
-// import 'bootstrap/dist/js/bootstrap.min.js'
 import Header1 from "./components/header 1";
-import Header2 from "./components/header 2";
 import Home from "./components/Pages/home.js";
-// import Login from "./components/Pages/login";
-// import SignUp from "./components/Pages/signup";
-// import Contact from "./components/Pages/contact-us";
+import Login from "./components/Pages/login";
+import SignUp from "./components/Pages/signup";
+import Contact from "./components/Pages/contact-us";
 import BookSection from "./components/book-section";
-// import About from "./components/Pages/about-us";
+import About from "./components/Pages/about-us";
 
 // cart
 import axios from "axios";
 import Cart from "./components/cart/Cart";
 import Navbar from "./components/Navbar";
 import BookList from "./components/bookList";
+import Footer from "./components/footer";
 
 
 const App = () => {
@@ -134,19 +132,26 @@ const App = () => {
       <div>
         
         <Switch>
-          {/* <Route exact path="/login">
+         <Route exact path="/login">
+         <Header1 />
         <Login />
+        <Footer />
       </Route>
       <Route exact path="/signup">
+        <Header1 />
         <SignUp />
+        <Footer />
       </Route>
       <Route exact path="/contact">
+      <Header1 />
         <Contact />
+        <Footer />
       </Route>
       <Route exact path="/about">
         <Header1 />
         <About />
-      </Route> */}  
+        <Footer />
+      </Route>
           <Route exact path="/">
           <Header1 totalItems={cart.length} />
           <Home />
@@ -155,9 +160,11 @@ const App = () => {
               onAddToCart={handleAddToCart}
               handleUpdateCartQty
             />
+            <Footer />
           </Route>
           <Route exact path="/cart">
-          <Navbar totalItems={cart.length} />
+          {/* <Navbar totalItems={cart.length} /> */}
+          <Header1 totalItems={cart.length} bg="#595959"/>
             <Cart
              isLoading={isLoading}
               cart={cart}
@@ -165,6 +172,10 @@ const App = () => {
               onRemoveFromCart={handleRemoveFromCart}
               onEmptyCart={handleEmptyCart}
             />
+            <Footer />
+          </Route>
+          <Route>
+            
           </Route>
         </Switch>
       </div>

@@ -2,10 +2,15 @@ import { BrowserRouter as Router, Link } from "react-router-dom";
 import "./header.css";
 
 
- const Header1 = ({ totalItems }) => {
- 
+ function Header1({totalItems}){
+
+const styleCartHead = {
+  color: "#000000",
+  background: "rgba(8, 178, 196)"
+}
+
   return (
-    <header>
+    <header style = {styleCartHead}>
       <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
           <Link to="/" className="navbar-brand" id="header-logo" href="#">
@@ -60,9 +65,9 @@ import "./header.css";
 
             <ul className="navbar-nav mb-lg-0 ms-auto">
             <li className="nav-item">
-              <a className="nav-link active" href="/cart">
+              <a className="nav-link active" href="/cart" >
               <span className="material-icons"> shopping_cart </span>
-              <span class="badge bg-danger">{totalItems}</span>
+              <span className="badge bg-danger">{totalItems}</span>
               </a>
             </li>
               <li className="nav-item leftHead">
@@ -75,17 +80,6 @@ import "./header.css";
                   LOG IN
                 </Link>
               </li>
-              <li className="nav-item ">
-                <Link to="/contact" className="nav-link fw-normal" href="#">
-                  CONTACT US
-                </Link>
-              </li>
-              <li className="nav-item ">
-                <Link to="/about" className="nav-link fw-normal" href="#">
-                  ABOUT US
-                </Link>
-              </li>
-             
              
             </ul>
           </div>

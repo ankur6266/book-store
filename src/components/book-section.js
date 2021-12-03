@@ -1,5 +1,6 @@
 import BookCard from "./book-card";
 import "./book-section.css";
+import BookList from "./bookList";
 
 const BookSection = ({ products, onAddToCart }) => {
 
@@ -7,7 +8,7 @@ const BookSection = ({ products, onAddToCart }) => {
   return (
     <div className="container-fluid bookSection">
       <div className="row">
-        {products.map((book) => {
+        {BookList.map((book) => {
           return (
             <BookCard book={book}  onAddToCart={onAddToCart} />
           );

@@ -4,19 +4,18 @@ import '../Pages/login.css'
 function Login(){
     return(
         <div className='login'>
-            <Link to='/' className="login_head">
-                <h2>BOOKISH</h2>
-            </Link>
 
             <div className='login__container'>
                 <h1>Log In</h1>
 
                 <form>
                     <h5>E-mail</h5>
-                    <input type="email" placeholder="E-mail"/>
+                    <input type="email" placeholder="E-mail" required/>
                     <h5>Password</h5>
                     <input type="password" placeholder="Password" required />
-                    <button type='submit' className='login__signInButton'>Login</button>
+                    <button type='submit' className='login__signInButton' >
+                    Login
+                    </button>
                 </form>
 
                 <p>

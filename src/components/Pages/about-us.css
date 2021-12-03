@@ -7,18 +7,18 @@
     text-align: center;
 }
         
-  *, *:before, *:after {
+.about *, *:before, *:after {
     box-sizing: inherit;
   }
   
-  .column {
+ .about .column {
     float: left;
     width: 33%;
     margin-bottom: 20px;
     padding: 0 8px;
   }
   
-  .card {
+ .about .card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     margin-left: 23%;
     width: 18rem;
@@ -33,7 +33,7 @@
     background-color: #b87141;
     color: white;
   }
-  
+
   .container {
     padding: 16px;
 

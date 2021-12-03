@@ -1,6 +1,8 @@
 .Contact{
   background-image: url('../images/home-background.jpg');
   padding: 0 15%;
+  padding-top: 5%;
+  padding-bottom: 3%;
 }
 .contact_head{
   width: 30%;

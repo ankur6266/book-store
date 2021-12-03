@@ -3,9 +3,6 @@ import '../Pages/contact-us.css'
 function Contact(){
     return(
         <div class="Contact">
-            <Link className="contact_head" to='/'>
-                <h2>BOOKISH</h2>
-            </Link>
             <div class="contact-section">
                 <h2 class="ct-section-head">
                 CONTACT US

@@ -37,6 +37,7 @@
     border-radius: 5px;
     border: 1px solid lightgray;
     padding: 3%;
+    margin-top: 5%;
 }
 @media only screen and (max-width: 1200px) {
   .signup__container {

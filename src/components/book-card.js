@@ -1,12 +1,13 @@
+import { Link } from 'react-router-dom';
 import './book-card.css'
 
 
-const BookCard = ({ book, onAddToCart }) => {
+function BookCard({ book, onAddToCart }){
     const handleAddToCart = () => onAddToCart(book, 1);
 
     return(
         <div className="col-lg-3 col-md-3 col-sm-6 col-xs-6 bookCard">
-            <div class="in-card">
+            <div className="in-card">
             <h6>{book.name}</h6>
             <img className="cardImage" src = {book.image} alt="book"/>
             <h6>Price: ₹ {book.price}</h6>
@@ -18,10 +19,10 @@ const BookCard = ({ book, onAddToCart }) => {
                             ))}
                 </div>
             
-                <button className="btn">Buy Now/ Rent</button>
+                <Link to='/OnBuy' target="_blank" className="btn">Buy Now</Link>
                 {/* <button className="btn" onClick={handleAddToCart} disabled="true">
-                    Add To Cart <div class="spinner-border spinner-border-sm" role="status">
-                        <span class="visually-hidden">Loading...</span>
+                    Add To Cart <div className="spinner-border spinner-border-sm" role="status">
+                        <span className="visually-hidden">Loading...</span>
                     </div>
                 </button> */}
                 <button className="btn" onClick={handleAddToCart} >

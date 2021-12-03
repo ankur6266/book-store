@@ -5,7 +5,17 @@ import CartItem from './CartItem/CartItem';
 
 const Cart = ({ isLoading, cart, onUpdateCartQty, onRemoveFromCart, onEmptyCart }) => {
 
-  if (isLoading) return 'Loading';
+  //if (isLoading) return 'Loading';
+  if(isLoading){
+    return (
+      
+      <div className="container my-5">
+        
+        <h5 className="row my-5">Wait Your Cart Is Getting Ready!</h5>
+      </div>
+      
+    );
+  }
   
   //if (!cart.length) return 'Loading';
   const handleEmptyCart = () => onEmptyCart();
@@ -19,18 +29,18 @@ const Cart = ({ isLoading, cart, onUpdateCartQty, onRemoveFromCart, onEmptyCart 
    {cart.map((lineItem) => (
         <CartItem item={lineItem} onUpdateCartQty={onUpdateCartQty} onRemoveFromCart={onRemoveFromCart}/>
     ))}
-    <div class="card my-5">
-        <div class="card-header">
-          Cart Items: <span class="badge bg-warning text-dark">{cart.length}</span>
+    <div className="card my-5">
+        <div className="card-header">
+          Cart Items: <span className="badge bg-warning text-dark">{cart.length}</span>
         </div>
-        <div class="card-body">
-          <div class="row">
-            <div class="col-6">
+        <div className="card-body">
+          <div className="row">
+            <div className="col-6">
               <h2>Total Amount: ₹{Object.values(cart).reduce((r, { price,quantity }) => r + (price*quantity), 0)}</h2>
             </div>
-            <div class="col-6 text-end">
-              {/* <button href="#" class="btn btn-danger btn-lg" onClick={handleEmptyCart}  >EMPTY</button> */}
-              <button href="#" class="btn btn-primary btn-lg mx-2">CHECKOUT</button>
+            <div className="col-6 text-end">
+              {/* <button href="#" className="btn btn-danger btn-lg" onClick={handleEmptyCart}  >EMPTY</button> */}
+              <button href="#" className="btn btn-primary btn-lg mx-2">CHECKOUT</button>
             </div>
           </div>
         </div>
@@ -45,11 +55,12 @@ const Cart = ({ isLoading, cart, onUpdateCartQty, onRemoveFromCart, onEmptyCart 
   );
 
   return (
-    <div class="container">
-        <h1 class="my-5">Your Shopping Cart</h1>
+    <div className="container-fluid" style={{background: "#bfbfbf"}}>
+        <h1 className="my-5">Your Shopping Cart</h1>
         { !cart.length ? renderEmptyCart() : renderCart() }
     </div>
   );
+  
 };
 
 export default Cart;
