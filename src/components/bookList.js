@@ -2,7 +2,7 @@ const BookList = [
     {
         id : 'WD123',
         name : "JavaScript & jQuery: The Missing Manual",
-        category : "Web Developmenr",
+        category : "Web Development",
         rating : 4,
         image: require("../Book-Images/WD123.jpg").default,
         price : 550
@@ -82,7 +82,7 @@ const BookList = [
     {
         id: 'ML013',
         name: "Machine Learning with Python Coocbook: Practical Solutions from Preprocessing to Deep Learning",
-        category: "Web Development",
+        category: "ML",
         rating: 3,
         image: require("../Book-Images/ML013.jpeg").default,
         price:450

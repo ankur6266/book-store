@@ -43,12 +43,12 @@ const styleCartHead = {
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
                     <a className="dropdown-item" href="#">
-                      Web Dev
+                      <Link to='/webD'>Web Dev</Link>
                     </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                      Data Science
+                    <Link to='/history'>History</Link>
                     </a>
                   </li>
                   <li>
@@ -56,7 +56,12 @@ const styleCartHead = {
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                      Robotics
+                    <Link to='/novel'>Novel</Link>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      <Link to='/poetry'>Poetry</Link>
                     </a>
                   </li>
                 </ul>

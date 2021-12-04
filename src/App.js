@@ -14,6 +14,10 @@ import Cart from "./components/cart/Cart";
 import Navbar from "./components/Navbar";
 import BookList from "./components/bookList";
 import Footer from "./components/footer";
+import WebD from "./components/categories/webD";
+import Poetry from "./components/categories/poetry";
+import History from "./components/categories/history";
+import Novel from "./components/categories/novel";
 
 
 const App = () => {
@@ -164,7 +168,7 @@ const App = () => {
           </Route>
           <Route exact path="/cart">
           {/* <Navbar totalItems={cart.length} /> */}
-          <Header1 totalItems={cart.length} bg="#595959"/>
+          <Header1 totalItems={cart.length}/>
             <Cart
              isLoading={isLoading}
               cart={cart}
@@ -174,8 +178,29 @@ const App = () => {
             />
             <Footer />
           </Route>
-          <Route>
-            
+          <Route exact path="/webD">
+          <Header1 totalItems={cart.length}/>
+          <WebD products={products}
+              onAddToCart={handleAddToCart}
+              handleUpdateCartQty/>
+          </Route>
+          <Route exact path="/poetry">
+          <Header1 totalItems={cart.length}/>
+          <Poetry products={products}
+              onAddToCart={handleAddToCart}
+              handleUpdateCartQty/>
+          </Route>
+          <Route exact path="/history">
+          <Header1 totalItems={cart.length}/>
+          <History products={products}
+              onAddToCart={handleAddToCart}
+              handleUpdateCartQty/>
+          </Route>
+          <Route exact path="/novel">
+          <Header1 totalItems={cart.length}/>
+          <Novel products={products}
+              onAddToCart={handleAddToCart}
+              handleUpdateCartQty/>
           </Route>
         </Switch>
       </div>

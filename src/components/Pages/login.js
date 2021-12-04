@@ -1,7 +1,15 @@
+import { useState } from "react";
 import {Link} from "react-router-dom"
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import '../Pages/login.css'
 
 function Login(){
+    const history = useHistory();
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    
+
     return(
         <div className='login'>
 
@@ -10,10 +18,14 @@ function Login(){
 
                 <form>
                     <h5>E-mail</h5>
-                    <input type="email" placeholder="E-mail" required/>
+                    <input type="email" placeholder="E-mail" required
+                    value={email} onChange = {e => setEmail(e.target.value)} />
                     <h5>Password</h5>
-                    <input type="password" placeholder="Password" required />
-                    <button type='submit' className='login__signInButton' >
+                    <input type="password" placeholder="Password" required
+                    value={password} onChange = {e => setPassword(e.target.value)} />
+                    <button type='submit' className='login__signInButton' 
+                    onClick = {() => history.push('/')}
+                     >
                     Login
                     </button>
                 </form>
