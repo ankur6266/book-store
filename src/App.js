@@ -16,7 +16,7 @@ import axios from "axios";
 import Cart from "./components/cart/Cart";
 import Navbar from "./components/Navbar";
 import BookList from "./components/bookList";
-
+import Checkout from "./components/checkout/Checkout";
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -164,6 +164,13 @@ const App = () => {
               onUpdateCartQty={handleUpdateCartQty}
               onRemoveFromCart={handleRemoveFromCart}
               onEmptyCart={handleEmptyCart}
+            />
+          </Route>
+          <Route exact path="/checkout">
+          <Navbar totalItems={cart.length} />
+            <Checkout
+             isLoading={isLoading}
+              cart={cart}
             />
           </Route>
         </Switch>

@@ -30,38 +30,18 @@
       "updated_date": "12/10/2021"
     }
   ],
-  "carts": [
+  "carts": [],
+  "orders": [
     {
-      "pid": 2,
-      "name": "Web Desinging and Publishing",
-      "price": 180,
-      "quantity": 4,
-      "image": "/static/media/WAP01.422434a4.jpg",
-      "id": 2
-    },
-    {
-      "pid": 3,
-      "name": "Learning Web Design: A Beginners Guide to HTML, Css, Javasrcipt and Web graphics",
-      "price": 663,
-      "quantity": 2,
-      "image": "/static/media/LWD02.01b8d107.jpeg",
-      "id": 3
-    },
-    {
-      "pid": 4,
-      "name": "Mastering HTML,Css,& Javascript Web Publishing",
-      "price": 190,
-      "quantity": 2,
-      "image": "/static/media/MHCJ3.9d3740ec.jpeg",
-      "id": 4
-    },
-    {
-      "pid": "JFMW5",
-      "name": "Javascript for Modern Web Development: Building A Web Application Using HTML ,Css and Javascript",
-      "price": 376,
-      "quantity": 1,
-      "image": "/static/media/JFMW5.7c9dd777.jpeg",
-      "id": 5
+      "fname": "Mark",
+      "lname": "Smith",
+      "address": "Street 104",
+      "email": "marksmith2@g.com",
+      "city": "LA",
+      "zipcode": "12345",
+      "country": "india",
+      "pmethod": "Cash On Delivery",
+      "id": 1
     }
   ]
 }

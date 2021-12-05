@@ -30,7 +30,7 @@ const Cart = ({ isLoading, cart, onUpdateCartQty, onRemoveFromCart, onEmptyCart 
             </div>
             <div class="col-6 text-end">
               {/* <button href="#" class="btn btn-danger btn-lg" onClick={handleEmptyCart}  >EMPTY</button> */}
-              <button href="#" class="btn btn-primary btn-lg mx-2">CHECKOUT</button>
+              <a href="/checkout" class="btn btn-primary btn-lg mx-2">CHECKOUT</a>
             </div>
           </div>
         </div>
