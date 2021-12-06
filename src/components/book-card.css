@@ -3,7 +3,8 @@
     text-align: center;;
 }
 h6{
-    font-size: 10px;
+    font-size: 15px;
+    
 }
 .in-card{
     background-color: transparent;
@@ -19,8 +20,10 @@ h6{
     display: inline;
 }
 .bookCard .btn{
-    background-color: rgb(49, 255, 169);
+    border-radius: 10px;
+    background-color: rgb(255, 253, 119);
     margin: 1.5px;
+    padding: 5px;
 }
 @media only screen and (max-width: 576px) {
     .bookCard{

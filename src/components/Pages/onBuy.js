@@ -1,8 +1,10 @@
 function OnBuy({book}){
     return(
         <div>
-            <img src = {book.image} />
+            <h1>Buy Now Page</h1>
+            {/* <img src={}  */}
         </div>
 
     )
 }
+export default OnBuy;
