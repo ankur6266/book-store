@@ -27,10 +27,10 @@ const BookList = [
         id: 'MHCJ3',
         name: "Mastering HTML,Css,& Javascript Web Publishing",
         category: "Web Development",
-        rating: 4,
+        rating: 4,  
         image: require("../Book-Images/MHCJ3.jpeg").default,
         price: 190
-    },  
+    },      
     {
         id: 'JFMW5',
         name: "Javascript for Modern Web Development: Building A Web Application Using HTML ,Css and Javascript",

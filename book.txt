@@ -7,7 +7,7 @@ price: 550
 }
 
 {
-id: ML321
+id: ML321   
 name: "Machine Learning with Python Cookbook: Practical Solutions from Preprocessing to Deep Learning"
 category: "Web Developmenr"
 rating: 3
