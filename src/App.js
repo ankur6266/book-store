@@ -208,6 +208,13 @@ const App = () => {
               cart={cart}
             />
           </Route>
+          <Route exact path="/checkout">
+          <Navbar totalItems={cart.length} />
+            <Checkout
+             isLoading={isLoading}
+              cart={cart}
+            />
+          </Route>
         </Switch>
       </div>
     </Router>
