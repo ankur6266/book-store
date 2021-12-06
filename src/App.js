@@ -7,10 +7,6 @@ import SignUp from "./components/Pages/signup";
 import Contact from "./components/Pages/contact-us";
 import BookSection from "./components/book-section";
 import About from "./components/Pages/about-us";
-
-// cart
-import axios from "axios";
-import Cart from "./components/cart/Cart";
 import Navbar from "./components/Navbar";
 import BookList from "./components/bookList";
 import Footer from "./components/footer";
@@ -18,7 +14,10 @@ import WebD from "./components/categories/webD";
 import Poetry from "./components/categories/poetry";
 import History from "./components/categories/history";
 import Novel from "./components/categories/novel";
-
+// cart
+import axios from "axios";
+import Cart from "./components/cart/Cart";
+import Checkout from "./components/checkout/Checkout";
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -201,6 +200,13 @@ const App = () => {
           <Novel products={products}
               onAddToCart={handleAddToCart}
               handleUpdateCartQty/>
+          </Route>
+          <Route exact path="/checkout">
+          <Navbar totalItems={cart.length} />
+            <Checkout
+             isLoading={isLoading}
+              cart={cart}
+            />
           </Route>
         </Switch>
       </div>
